@@ -17,3 +17,4 @@ I got my bachelor degree in Statistics from [University of Hong Kong](https://sa
 ### Contact me
 
 [reagan.zhao@gmail.com](mailto:reagan.zhao@gmail.com)
+[Linkedin](https://www.linkedin.com/in/yunzheng-regan-zhao-a1b55b12b/)

@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+Over the last two decades I have spent a significant amount of energy either hiring people or helping students get jobs. As the director of USF's practicum program I've helped hundreds of students apply for data science jobs, negotiate salaries and generally navigate the difficulties around employement. 
+
+The purpose of these pages are to share that advice. 
+
+{% for item in site.career %}
+  <p><a href="{{ item.url }}">{{item.date | date: "%m/%d/%Y"}}: {{ item.title }}</a></p>
+{% endfor %}

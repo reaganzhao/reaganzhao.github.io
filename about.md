@@ -11,7 +11,7 @@ Currently, I'm working at [Recology](https://www.recology.com/) Routing Team as 
 
 ### Education
 
-I got my STAT bachelor degree from [University of Hong Kong](https://saasweb.hku.hk/) (2017)
+I got my bachelor degree in Statistics from [University of Hong Kong](https://saasweb.hku.hk/) (2017)
 
 
 ### Contact me

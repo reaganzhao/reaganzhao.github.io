@@ -4,7 +4,7 @@ title: Bike Share Travel Time Prediction
 mathjax: true
 ---
 
-School project with PySpark and AWS
+School project with PySpark, AWS, and H2O ML packages.
 
 <div style="text-align: center"><img src="/images/bike-share.jpg" width="250" /></div>
 

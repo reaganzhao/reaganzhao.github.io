@@ -1,0 +1,17 @@
+.jekyll-metadata
+*.DS_store
+*.ipynb_checkpoints
+.idea/
+
+*/data
+
+_site
+.sass-cache
+.DS_Store
+.ruby-version
+node_modules
+
+*.idea/
+*.DS_Store
+_sample_posts/
+.DS_Store

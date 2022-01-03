@@ -1,4 +1,4 @@
 # Capsicum
 [Development blog](https://rebeccabilbro.github.io/) of Regan Zhao.
 
-![pepper](images/pepper.png)
+![golden gate](images/golden_gate.jpg)

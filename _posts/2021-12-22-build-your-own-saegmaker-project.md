@@ -12,7 +12,7 @@ Sagemaker has its own templates for machine learning model training, deployment,
 
 ## Inference Pipeline
 
-The inference pipeline saves the combined sklearn preprocessor and machine learning model, and trigger them after you deploy the model. There is a very good tutorial about inference pipeline in [sagemaker notebook](https://github.com/aws/amazon-sagemaker-examples/blob/master/sagemaker-python-sdk/scikit_learn_inference_pipeline/Inference%20Pipeline%20with%20Scikit-learn%20and%20Linear%20Learner.ipynb). It walks through how the inference pipeline should be saved and applied in a Jupiter notebook. While it doesn't talk too much about how to transform it in a sagemaker project using the defined steps. You may have seen the [`post`] (https://docs.aws.amazon.com/sagemaker/latest/dg/build-and-manage-steps.html), and under "RegisterModel" there is a pipeline model defined simply as the above, but there is way too few information about how to build it. Here is my way to build it:
+The inference pipeline saves the combined sklearn preprocessor and machine learning model, and trigger them after you deploy the model. There is a very good tutorial about inference pipeline in [sagemaker notebook](https://github.com/aws/amazon-sagemaker-examples/blob/master/sagemaker-python-sdk/scikit_learn_inference_pipeline/Inference%20Pipeline%20with%20Scikit-learn%20and%20Linear%20Learner.ipynb). It walks through how the inference pipeline should be saved and applied in a Jupiter notebook. While it doesn't talk too much about how to transform it in a sagemaker project using the defined steps. You may have seen the [post](https://docs.aws.amazon.com/sagemaker/latest/dg/build-and-manage-steps.html), and under "RegisterModel" there is a pipeline model defined simply as the above, but there is way too few information about how to build it. Here is my way to build it:
 
 **1.Create a sklearn estimator**
 
@@ -28,7 +28,7 @@ sklearn_preprocessor = SKLearn(
         image_uri=sklearn_image_uri
         )
 ```
-The section is the same as the notebook tutorial. Remember to put the input_fn, out_fn, predict_fn, and model_fn as the [`notebook`] (https://github.com/aws/amazon-sagemaker-examples/blob/master/sagemaker-python-sdk/scikit_learn_inference_pipeline/Inference%20Pipeline%20with%20Scikit-learn%20and%20Linear%20Learner.ipynb) in the entry point script.
+The section is the same as the notebook tutorial. Remember to put the input_fn, out_fn, predict_fn, and model_fn as the [`notebook`](https://github.com/aws/amazon-sagemaker-examples/blob/master/sagemaker-python-sdk/scikit_learn_inference_pipeline/Inference%20Pipeline%20with%20Scikit-learn%20and%20Linear%20Learner.ipynb) in the entry point script.
 
 **2.Fit the sklearn estimator**
 
@@ -77,7 +77,7 @@ step_save_data = ProcessingStep(
         depends_on=['FitSkLearnPreprocessor']
     )
 ```
-The key parameter here is the job_arguments, it helps you to find the location from the previous step without hardcoding. In the format_preprocessor_output.py, you will need
+The key parameter here is the job_arguments, it helps you to find the location from the previous step without hardcoding.
 ```python
 import os
 import io
@@ -132,7 +132,7 @@ step_train_xgboost = TrainingStep(
 ```
 
 **5.Final Step: Create the pipeline model for inference
-This time it will be similar to the [`documentation`] (https://docs.aws.amazon.com/sagemaker/latest/dg/build-and-manage-steps.html)
+This time it will be similar to the [`documentation`](https://docs.aws.amazon.com/sagemaker/latest/dg/build-and-manage-steps.html)
 
 ```python
 model_sklearn_preprocessor = SKLearnModel(

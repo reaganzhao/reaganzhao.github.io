@@ -7,7 +7,7 @@ tags:   programming
 date:   2022-01-03 14:25
 ---
 
-Sagemaker has its own templates for machine learning model training, deployment, and monitoring. One of the very important features is the sagemaker project, which has the default deployment and monitoring environment and is able to handle the git repo between users. While there seems to be limited resources and documentation regarding the how to set up your own project apart from the abalone tutorial, I would like to walk through how to 1. build a inference pipeline model, 2. create your own image for a sagemaker project
+Sagemaker has its own templates for machine learning model training, deployment, and monitoring. One of the very important features is the sagemaker project, which has the default deployment and monitoring environment and is able to handle the git repo between users. While there seems to be limited resources and documentation regarding the how to set up your own project apart from the abalone tutorial, I would like to walk through how to 1. build a inference pipeline model, 2. create your own image for a [sagemaker project](https://reaganzhao.github.io/use-updated-scikit-learn-in-sagemaer-project/)
 
 
 ## Inference Pipeline

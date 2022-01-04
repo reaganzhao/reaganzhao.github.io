@@ -14,8 +14,8 @@
   </style>
 </head>
 <body>
-<p class="p1"><span class="s1">--- layout: post-index title: description: “The shortest answer is doing the thing.” tags: home comments: false image: feature: golden_gate.jpg --- {% for post in paginator.posts %}</span></p>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9"><span class="s2"><a href="file:///Users/yunzhengzhao/Documents/GitHub/reaganzhao.github.io/%7B%7B%20post.url%20%7C%20prepend:%20site.baseurl%20%7D%7D"><b>{{ post.title }}</b></a></span></h2>
+<p class="p1"><span class="s1">--- layout: post-index title: Regan Zhao description: “The shortest answer is doing the thing.” tags: home comments: false image: feature: golden_gate.jpg --- {% for post in paginator.posts %}</span></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #0000e9; -webkit-text-stroke: #0000e3"><span class="s2"><a href="file:///Users/yunzhengzhao/Documents/GitHub/reaganzhao.github.io/%7B%7B%20post.url%20%7C%20prepend:%20site.baseurl%20%7D%7D"><b>{{ post.title }}</b></a></span></h2>
 <p class="p3"><span class="s1">{{ post.date | date: '%B %d, %Y' }}</span></p>
 <p class="p3"><span class="s1">{% if post.description %}{{ post.description }}{% else %}{{ post.excerpt | strip_html }}{% endif %}</span></p>
 <p class="p1"><span class="s1">{% endfor %} {% include pagination.html %}<span class="Apple-converted-space"> </span></span></p>

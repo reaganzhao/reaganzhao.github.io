@@ -47,6 +47,7 @@ step_train_sklearn = TrainingStep(
 This section is the ".fit({"train": train_input})" in the notebook. While sagemaker project doesn't support a .fit(), we will use a training step instead.
 
 **3.(Optional) Convert the fit result**
+
 This step is optional because if you hardcode your output data file in the entry_point in step 1, then you can use the hardcoded path directly in the next step. If you hate to use any hardcoded path (like me), you can use an additional step to avoid that.
 
 So in your sklearn_preprocess.py, save your data using
@@ -107,6 +108,7 @@ There can be other ways to unzip and extract the files, this is my way to do tha
 
 
 **4.Train your machine learning model**
+
 You can then train the model using the way the same as the abalone tutorial. I use xgboost as the example here:
 
 ```python
@@ -131,7 +133,8 @@ step_train_xgboost = TrainingStep(
     )
 ```
 
-**5.Final Step: Create the pipeline model for inference
+**5.Final Step: Create the pipeline model for inference**
+
 This time it will be similar to the [`documentation`](https://docs.aws.amazon.com/sagemaker/latest/dg/build-and-manage-steps.html)
 
 ```python

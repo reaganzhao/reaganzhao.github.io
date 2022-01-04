@@ -2,7 +2,7 @@
 layout: post
 title:  Upgrade scikit-learn in sagemaker
 image:
-  feature: pepper_crop.png
+  feature: gate_crop.png
 tags:   programming
 date:   2022-01-03 16:40
 ---

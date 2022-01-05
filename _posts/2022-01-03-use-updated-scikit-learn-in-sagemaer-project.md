@@ -39,7 +39,8 @@ class OrdinalEncoderNew(object):
 ```
 Your can then call OrdinalEncoderNew() in your preprocessing object. The drawback of this method is you may see a "Module Main has No Attribute" error. I think the best way to solve it is to follow this [`blog`](https://rebeccabilbro.github.io/module-main-has-no-attribute/) by creating a new file to write your class in it. The thing is after using that you will need to use "source_dir" or "dependencies" to use it for model preprocessing and training.
 
-**2. Create your own image container for new scikit-learn version
+## 2. Create your own image container for new scikit-learn version
+
 I prefer this method because 1.you are able to use other features in scikit-learn and 2.use it in other notebooks easily. It can be much more complicated if you need to build the image from scratch all by yourself. Fortunately, pagemaker's [`default container`](https://github.com/aws/sagemaker-scikit-learn-container) makes it easy for you to build the image on top of it.
 
 So the steps to build the image will be 
